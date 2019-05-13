@@ -40,6 +40,10 @@ new CronJob('0 0 2 * * 1-5', function() {
 	}
 });
 
-app.listen(3000, () => {
-	console.log('Running on 3000');
+app.get("/", (req, res) => {
+	res.send('ok lol')
+})
+
+app.listen(process.env.PORT, () => {
+	console.log(`Running on ${process.env.PORT}`);
 });
