@@ -8,7 +8,7 @@ var rc = require('random-cron');
 var processes = require('./process.js')
 
 // For debugging uncomment this line. Enter the name of the process you want to test to diabled randomness
-// processes()
+processes("news")
 
 const cronArray = []
 // Each day of the working week 2am
